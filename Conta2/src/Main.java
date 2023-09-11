@@ -32,9 +32,9 @@ public class Main {
                         3- Transferir.
                         4- Mostrar Dados.
                         5- Encerrar.""");
-                varia = leia.nextLine();
+                varia = leia.nextInt();
                 try {
-                    if (varia=1)) {
+                    if (varia==1) {
                         System.out.println("Me dê o valor de saque.\nValor adicional de taxa: 6.50 para " +
                                 "contas correntes. ");
                         numero = leia.nextInt();
@@ -45,7 +45,7 @@ public class Main {
                 }
 
                 try {
-                    if (varia=2)) {
+                    if (varia==2) {
                         System.out.println("me dê o valor de deposito");
                         numero = leia.nextInt();
                         contaGabriel.deposita(numero);
@@ -55,7 +55,7 @@ public class Main {
                 }
 
                 try {
-                    if (varia=3) {
+                    if (varia==3) {
                         System.out.println("me dê o valor de transferência");
                         numero = leia.nextInt();
                         contaGabriel.transfere(numero, contaHeloisa);
@@ -64,7 +64,7 @@ public class Main {
                 }catch(Excecao ex) {
                     System.out.println(ex.getMessage());
                 }
-                if(varia=4){
+                if(varia==4){
                     System.out.println(contaGabriel.getTitular().getDados()+"Saldo:" +contaGabriel.getSaldo()+" " +
                                     "\nConta: "+
                             contaGabriel.getTipoConta()+ "\nNúmero da conta: " +contaGabriel.getNumero()+ "\nAgencia: " +
@@ -73,7 +73,9 @@ public class Main {
 
 
             }while(varia!=5);
+            System.out.println("sla fodase");
         }
+        
         }
 
 
