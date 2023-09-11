@@ -73,7 +73,7 @@ public class Main {
 
 
             }while(varia!=5);
-            System.out.println("sla fodase");
+           
         }
         
         }
